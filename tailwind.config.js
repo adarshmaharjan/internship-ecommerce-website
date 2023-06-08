@@ -18,6 +18,9 @@ export default {
       borderRadius: {
         "4xl": "2rem",
       },
+      fontFamily: {
+        "product-sans": "Product Sans",
+      },
     },
   },
   plugins: [],

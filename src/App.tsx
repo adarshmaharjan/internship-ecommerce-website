@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <div>e-Commerce App</div>
+      <div style={{ fontFamily: "Product Sans" }}>e-Commerce App</div>
     </>
   )
 }

@@ -8,7 +8,9 @@ export default {
       lg: "976px",
       xl: "1440px",
     },
-    colors: {},
+    colors: {
+      gray: "#7E7E7E",
+    },
 
     extend: {
       spacing: {

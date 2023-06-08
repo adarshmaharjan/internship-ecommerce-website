@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindTypography from "@tailwindcss/typography";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+    },
     screens: {
       sm: "480px",
       md: "768px",
@@ -25,5 +29,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindTypography],
 };

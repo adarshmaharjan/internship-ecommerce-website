@@ -12,7 +12,11 @@ export default {
       lg: "976px",
       xl: "1440px",
     },
-    colors: {},
+    colors: {
+      gray: "#7E7E7E",
+      black: "#000000",
+      white: "#FFFFFF",
+    },
 
     extend: {
       spacing: {

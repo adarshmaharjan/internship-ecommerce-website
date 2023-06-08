@@ -1,7 +1,5 @@
 const HomeComponent = () => {
-    return (
-        <>Home</>
-    )
-}
+  return <>Home</>;
+};
 
 export default HomeComponent;

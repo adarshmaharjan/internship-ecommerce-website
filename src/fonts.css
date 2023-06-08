@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Product Sans";
   src: url("./css/fonts/ProductSans-BoldItalic.woff2") format("woff2"),
     url("./css/fonts/ProductSans-BoldItalic.woff") format("woff");
@@ -32,4 +32,4 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-} */
+}

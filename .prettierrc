@@ -1,7 +1,13 @@
 {
   "semi": true,
-  "printWidth": 120,
+  "printWidth": 80,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "tabWidth": 2,
+  "useTabs": false,
   "singleQuote": false,
   "arrowParens": "always",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
   "proseWrap": "preserve"
 }

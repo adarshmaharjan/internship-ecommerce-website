@@ -9,57 +9,6 @@ export default {
     fontFamily: {
       body: ["product-sans"],
     },
-    fontSize: {
-      base: [
-        "1rem",
-        {
-          letterSpacing: "0.01em",
-          lineHeight: "24px",
-        },
-      ],
-      lg: [
-        "0.875rem",
-        {
-          letterSpacing: "0.01em",
-          lineHeight: "1.5",
-        },
-      ],
-      body: [
-        // paragraph size
-        "1rem",
-        {
-          lineHeight: "24px",
-          letterSpacing: "0.01em",
-        },
-      ],
-      xl: [
-        "1.25rem",
-        {
-          lineHeight: "1.4",
-        },
-      ],
-      "2xl": [
-        "1.5rem",
-        {
-          lineHeight: "1.4",
-          letterSpacing: "-0.005em",
-        },
-      ],
-      "3xl": [
-        "2.5rem",
-        {
-          lineHeight: "1.3",
-          letterSpacing: "-0.015em",
-        },
-      ],
-      "4xl": [
-        "3rem",
-        {
-          lineHeight: "1.5",
-          letterSpacing: "-0.02em",
-        },
-      ],
-    },
     screens: {
       sm: "480px",
       md: "768px",
@@ -73,6 +22,9 @@ export default {
       black: "#000000",
     },
     extend: {
+      backgroundImage: {
+        "banner-image": "url(src/assets/images/banner-image.png)",
+      },
       spacing: {
         128: "32rem",
         144: "36rem",

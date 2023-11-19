@@ -8,7 +8,7 @@ export enum ButtonType {
 interface TextButtonInterface {
   buttonType: ButtonType;
   buttonText: string;
-  onCLick?: () => void;
+  onClickBtn?: () => void;
   buttonHeight?: number;
   buttonWidth?: number;
   padding?: string;
@@ -18,6 +18,7 @@ const TextButton: React.FC<TextButtonInterface> = ({
   buttonType,
   buttonText,
   buttonHeight,
+  onClickBtn,
   buttonWidth,
   padding,
 }) => {
@@ -31,7 +32,7 @@ const TextButton: React.FC<TextButtonInterface> = ({
       break;
     case ButtonType.outlined:
       selectedButtonStyle =
-        "border border-black px-5 py-3 hover:bg-gray text-gray hover:text-white";
+        "border border-black px-5 py-3 hover:bg-gray text-white hover:text-white";
       break;
     case ButtonType.disabled:
       selectedButtonStyle = "";
@@ -40,12 +41,17 @@ const TextButton: React.FC<TextButtonInterface> = ({
   return (
     <>
       <button
-        className={`${selectedButtonStyle} ${buttonHeight} ${buttonWidth}`}
+        className={`${selectedButtonStyle} ${buttonHeight} ${buttonWidth} ${padding}`}
+        onClick={()=>{
+          if(onClickBtn){
+            onClickBtn()
+          }
+          throw Error("This button is unimplemented");
+        }}
       >
-        {buttonText} ${padding}
+        {buttonText}
       </button>
     </>
   );
 };
-
 export default TextButton;
